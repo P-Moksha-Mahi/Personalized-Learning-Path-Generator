@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personalized Learning Pathway Generato</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>PathFinder </h1>
+            <p>Your Personal Learning Journey Starts Here</p>
+        </header>
+
+        <main>
+
+            <section class="Welcome">
+                <h2>Build your Learning Path</h2>
+                <p>Tell us about yourself and discover what you should learn next.</p>
+            </section>
+
+            <section class="form-container">
+
+                <form id="Learning-Form">
+                    
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" placeholder="Enter your Name" required>
+
+                    <label for="goal">What do you want to learn?</label>
+                    <select id="goal" required>
+                        <option value="">Select your goal</option>
+                        <option value="Java Development">Java Development</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Python Programming">Python Programming</option>
+                        <option value="Data Structures">Data Structures</option>
+                    </select>
+
+                    <label for = "Level">Your Current Skill Level</label>
+                    <select id="Level" required>
+                        <option value="">Select your level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+
+                    <button type="submit">Generate My Learning Path</button>
+
+                </form>
+            </section>
+
+            <section id ="Result" classs="Result-Container" hidden>
+                <h2>Your Personalized Learning Path</h2>
+                <div id="Roadmap"></div>
+            </section>
+                
+        </main>
+
+        <footer>
+            <p>Personalized Learning Pathway Generator | Java Project</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

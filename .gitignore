@@ -1,0 +1,9 @@
+#Java compiled files
+*.class
+
+#VSCode settings
+.vscode/
+
+#Operating System files
+.DS_Store
+thumbs.db
